@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 
 /**
@@ -60,7 +60,7 @@ function _s_bootstrap_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary:
 	if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-		$title .= " $sep " . sprintf( __( 'Page %s', '_s-bootstrap-bootstrap' ), max( $paged, $page ) );
+		$title .= " $sep " . sprintf( __( 'Page %s', '_s_robotwholearned_theme-bootstrap' ), max( $paged, $page ) );
 	}
 
 	return $title;

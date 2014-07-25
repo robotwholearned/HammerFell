@@ -3,7 +3,7 @@
  * Jetpack Compatibility File
  * See: http://jetpack.me/
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 
 /**

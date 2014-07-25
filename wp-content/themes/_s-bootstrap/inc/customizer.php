@@ -1,8 +1,8 @@
 <?php
 /**
- * _s-bootstrap Theme Customizer
+ * _s_robotwholearned_theme Theme Customizer
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 
 /**

@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 
 get_header(); ?>

@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 
 if ( ! function_exists( '_s_bootstrap_paging_nav' ) ) :
@@ -18,15 +18,15 @@ function _s_bootstrap_paging_nav() {
 	}
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', '_s-bootstrap-bootstrap' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Posts navigation', '_s_robotwholearned_theme-bootstrap' ); ?></h1>
 		<div class="nav-links">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', '_s-bootstrap-bootstrap' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', '_s_robotwholearned_theme-bootstrap' ) ); ?></div>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', '_s-bootstrap-bootstrap' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', '_s_robotwholearned_theme-bootstrap' ) ); ?></div>
 			<?php endif; ?>
 
 		</div><!-- .nav-links -->
@@ -49,11 +49,11 @@ function _s_bootstrap_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', '_s-bootstrap-bootstrap' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', '_s_robotwholearned_theme-bootstrap' ); ?></h1>
 		<div class="nav-links">
 			<?php
-				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', '_s-bootstrap-bootstrap' ) );
-				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     '_s-bootstrap-bootstrap' ) );
+				previous_post_link( '<div class="nav-previous">%link</div>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', '_s_robotwholearned_theme-bootstrap' ) );
+				next_post_link(     '<div class="nav-next">%link</div>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     '_s_robotwholearned_theme-bootstrap' ) );
 			?>
 		</div><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -79,12 +79,12 @@ function _s_bootstrap_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', '_s-bootstrap-bootstrap' ),
+		_x( 'Posted on %s', 'post date', '_s_robotwholearned_theme-bootstrap' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		_x( 'by %s', 'post author', '_s-bootstrap-bootstrap' ),
+		_x( 'by %s', 'post author', '_s_robotwholearned_theme-bootstrap' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 

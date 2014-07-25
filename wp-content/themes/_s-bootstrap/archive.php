@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 
 get_header(); ?>
@@ -24,46 +24,46 @@ get_header(); ?>
 							single_tag_title();
 
 						elseif ( is_author() ) :
-							printf( __( 'Author: %s', '_s-bootstrap-bootstrap' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							printf( __( 'Author: %s', '_s_robotwholearned_theme-bootstrap' ), '<span class="vcard">' . get_the_author() . '</span>' );
 
 						elseif ( is_day() ) :
-							printf( __( 'Day: %s', '_s-bootstrap-bootstrap' ), '<span>' . get_the_date() . '</span>' );
+							printf( __( 'Day: %s', '_s_robotwholearned_theme-bootstrap' ), '<span>' . get_the_date() . '</span>' );
 
 						elseif ( is_month() ) :
-							printf( __( 'Month: %s', '_s-bootstrap-bootstrap' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', '_s-bootstrap-bootstrap' ) ) . '</span>' );
+							printf( __( 'Month: %s', '_s_robotwholearned_theme-bootstrap' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', '_s_robotwholearned_theme-bootstrap' ) ) . '</span>' );
 
 						elseif ( is_year() ) :
-							printf( __( 'Year: %s', '_s-bootstrap-bootstrap' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', '_s-bootstrap-bootstrap' ) ) . '</span>' );
+							printf( __( 'Year: %s', '_s_robotwholearned_theme-bootstrap' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', '_s_robotwholearned_theme-bootstrap' ) ) . '</span>' );
 
 						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', '_s-bootstrap-bootstrap' );
+							_e( 'Asides', '_s_robotwholearned_theme-bootstrap' );
 
 						elseif ( is_tax( 'post_format', 'post-format-gallery' ) ) :
-							_e( 'Galleries', '_s-bootstrap-bootstrap' );
+							_e( 'Galleries', '_s_robotwholearned_theme-bootstrap' );
 
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', '_s-bootstrap-bootstrap' );
+							_e( 'Images', '_s_robotwholearned_theme-bootstrap' );
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', '_s-bootstrap-bootstrap' );
+							_e( 'Videos', '_s_robotwholearned_theme-bootstrap' );
 
 						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', '_s-bootstrap-bootstrap' );
+							_e( 'Quotes', '_s_robotwholearned_theme-bootstrap' );
 
 						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', '_s-bootstrap-bootstrap' );
+							_e( 'Links', '_s_robotwholearned_theme-bootstrap' );
 
 						elseif ( is_tax( 'post_format', 'post-format-status' ) ) :
-							_e( 'Statuses', '_s-bootstrap-bootstrap' );
+							_e( 'Statuses', '_s_robotwholearned_theme-bootstrap' );
 
 						elseif ( is_tax( 'post_format', 'post-format-audio' ) ) :
-							_e( 'Audios', '_s-bootstrap-bootstrap' );
+							_e( 'Audios', '_s_robotwholearned_theme-bootstrap' );
 
 						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
-							_e( 'Chats', '_s-bootstrap-bootstrap' );
+							_e( 'Chats', '_s_robotwholearned_theme-bootstrap' );
 
 						else :
-							_e( 'Archives', '_s-bootstrap-bootstrap' );
+							_e( 'Archives', '_s_robotwholearned_theme-bootstrap' );
 
 						endif;
 					?>

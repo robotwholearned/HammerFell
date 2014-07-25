@@ -1,8 +1,8 @@
 <?php
 /**
- * _s-bootstrap functions and definitions
+ * _s_robotwholearned_theme functions and definitions
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 
 /**
@@ -25,10 +25,10 @@ function _s_bootstrap_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on _s-bootstrap, use a find and replace
-	 * to change '_s-bootstrap-bootstrap' to the name of your theme in all the template files
+	 * If you're building a theme based on _s_robotwholearned_theme, use a find and replace
+	 * to change '_s_robotwholearned_theme-bootstrap' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( '_s-bootstrap-bootstrap', get_template_directory() . '/languages' );
+	load_theme_textdomain( '_s_robotwholearned_theme-bootstrap', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -42,7 +42,7 @@ function _s_bootstrap_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', '_s-bootstrap-bootstrap' ),
+		'primary' => __( 'Primary Menu', '_s_robotwholearned_theme-bootstrap' ),
 	) );
 	
 	/*
@@ -77,7 +77,7 @@ add_action( 'after_setup_theme', '_s_bootstrap_setup' );
  */
 function _s_bootstrap_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Sidebar', '_s-bootstrap-bootstrap' ),
+		'name'          => __( 'Sidebar', '_s_robotwholearned_theme-bootstrap' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -92,11 +92,11 @@ add_action( 'widgets_init', '_s_bootstrap_widgets_init' );
  * Enqueue scripts and styles.
  */
 function _s_bootstrap_scripts() {
-	wp_enqueue_style( '_s-bootstrap-bootstrap-style', get_stylesheet_uri() );
+	wp_enqueue_style( '_s_robotwholearned_theme-bootstrap-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( '_s-bootstrap-bootstrap-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_script( '_s_robotwholearned_theme-bootstrap-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( '_s-bootstrap-bootstrap-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( '_s_robotwholearned_theme-bootstrap-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '3.0.1', true );
 

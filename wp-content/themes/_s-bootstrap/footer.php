@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 ?>
 
@@ -12,9 +12,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', '_s-bootstrap-bootstrap' ) ); ?>"><?php printf( __( 'Proudly powered by %s', '_s-bootstrap-bootstrap' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( 'http://wordpress.org/', '_s_robotwholearned_theme-bootstrap' ) ); ?>"><?php printf( __( 'Proudly powered by %s', '_s_robotwholearned_theme-bootstrap' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', '_s-bootstrap-bootstrap' ), '_s-bootstrap-bootstrap-bootstrap', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			<?php printf( __( 'Theme: %1$s by %2$s.', '_s_robotwholearned_theme-bootstrap' ), '_s_robotwholearned_theme-bootstrap-bootstrap', 'robotwholearned inc.' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

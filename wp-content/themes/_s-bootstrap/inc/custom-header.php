@@ -12,7 +12,7 @@
 	<?php endif; // End header image check. ?>
 
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 
 /**

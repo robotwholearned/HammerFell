@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _s-bootstrap
+ * @package _s_robotwholearned_theme
  */
 ?>
 
@@ -27,29 +27,29 @@
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$categories_list = get_the_category_list( __( ', ', '_s-bootstrap-bootstrap' ) );
+				$categories_list = get_the_category_list( __( ', ', '_s_robotwholearned_theme-bootstrap' ) );
 				if ( $categories_list && _s_bootstrap_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', '_s-bootstrap-bootstrap' ), $categories_list ); ?>
+				<?php printf( __( 'Posted in %1$s', '_s_robotwholearned_theme-bootstrap' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 
 			<?php
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', __( ', ', '_s-bootstrap-bootstrap' ) );
+				$tags_list = get_the_tag_list( '', __( ', ', '_s_robotwholearned_theme-bootstrap' ) );
 				if ( $tags_list ) :
 			?>
 			<span class="tags-links">
-				<?php printf( __( 'Tagged %1$s', '_s-bootstrap-bootstrap' ), $tags_list ); ?>
+				<?php printf( __( 'Tagged %1$s', '_s_robotwholearned_theme-bootstrap' ), $tags_list ); ?>
 			</span>
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
 		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', '_s-bootstrap-bootstrap' ), __( '1 Comment', '_s-bootstrap-bootstrap' ), __( '% Comments', '_s-bootstrap-bootstrap' ) ); ?></span>
+		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', '_s_robotwholearned_theme-bootstrap' ), __( '1 Comment', '_s_robotwholearned_theme-bootstrap' ), __( '% Comments', '_s_robotwholearned_theme-bootstrap' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', '_s-bootstrap-bootstrap' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', '_s_robotwholearned_theme-bootstrap' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
